@@ -5,12 +5,16 @@ const Counter = () => {
 
   // increment function
   const increment = () => {
-    setCount((prev) => prev + 1);
+    if (count < 20) {
+      setCount((prev) => prev + 1);
+    }
   };
 
   // decrement function
   const decrement = () => {
-    setCount((prev) => prev - 1);
+    if (count > 0) {
+      setCount((prev) => prev - 1);
+    }
   };
 
   return (
@@ -19,7 +23,7 @@ const Counter = () => {
       <h1>Count : {count}</h1>
       <br />
       {/* Show Increment button only if count < 20 */}
-      {count < 20  && <button onClick={increment}>Increment</button>}
+      {count < 20 && <button onClick={increment}>Increment</button>}
       <br />
 
       {/* Show Decrement button only if count > 0 */}
