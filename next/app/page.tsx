@@ -1,6 +1,11 @@
 
 export default function Home() {
   return (
-  <h1>Background Changer</h1>
+ <>
+ <div className=" flex flex-col gap-5 ">
+  <h1>Hello</h1>
+  <h1>World</h1>
+ </div>
+ </>
   );
 }
