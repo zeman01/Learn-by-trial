@@ -10,12 +10,12 @@ const links = [
     link: "/",
   },
   {
-    label: "colors",
+    label: "BackGround colors",
     link: "/BackgroundChanger",
   },
   {
-    label: "About Us",
-    link: "/about",
+    label: "Password Generator",
+    link: "/PasswordGenerator",
   },
   {
     label: "Contact Us",
